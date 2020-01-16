@@ -17,7 +17,6 @@ var connectCallback = function (err) {
     var msg = new Message('some data from my device');
     client.sendEvent(msg, function (err) {
       if (err) {
-          console.log(err);
         console.log(err.toString());
       } else {
         console.log('Message sent');
